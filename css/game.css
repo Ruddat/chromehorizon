@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    background:
+        radial-gradient(circle at center, #11103a 0%, #050511 58%, #020208 100%);
+    overflow: hidden;
+    font-family: Consolas, Monaco, monospace;
+}
+
+.game-shell {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+canvas {
+    display: block;
+    width: min(100vw, 1280px);
+    height: auto;
+    max-height: 100vh;
+    background: #050511;
+    box-shadow:
+        0 0 40px rgba(32, 247, 255, 0.22),
+        0 0 90px rgba(255, 43, 214, 0.18);
+}
